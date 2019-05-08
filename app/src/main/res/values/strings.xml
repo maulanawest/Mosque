@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Mosque</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="minggu">Minggu</string>
+    <string name="d_m_y_masehi">05 Agustus 2019</string>
+    <string name="d_m_y_hijriah">03 Dzulhiah 1430</string>
+    <string name="name_masjid">Masjid Al-Munawwaroh</string>
+    <string name="address_masjid">Jl. MH. Thamrin 38 RT. 03 Karen Kemayioran Jakarta</string>
+    <string name="no_hp">HP: 082210551993</string>
+    <string name="time">11:43:55</string>
+    <string name="prayer_times">Dzuhur - 00:01:03</string>
+    <string name="imsyak">Imsyak</string>
+    <string name="schedule">04:21</string>
+    <string name="shubuh">Shubuh</string>
+    <string name="dzuhur">Dzuhur</string>
+    <string name="ashar">Ashar</string>
+    <string name="magrib">Magrib</string>
+    <string name="isya">Isya</string>
+</resources>

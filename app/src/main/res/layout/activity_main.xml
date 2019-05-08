@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/ivBG"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bgmasjid"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTransparent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.v7.widget.GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:orientation="vertical"
+                app:layout_gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tvDay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/minggu"
+                    android:textColor="#FFF"
+                    android:textSize="20sp"
+                    app:layout_column="0"
+                    app:layout_columnWeight="1"
+                    app:layout_gravity="fill"
+                    app:layout_row="0"
+                    app:layout_rowWeight="1" />
+
+                <TextView
+                    android:id="@+id/tvDMYMasehi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/d_m_y_masehi"
+                    android:textColor="#FFF"
+                    android:textSize="20sp"
+                    app:layout_column="0"
+                    app:layout_columnWeight="1"
+                    app:layout_gravity="fill"
+                    app:layout_row="0"
+                    app:layout_rowWeight="1" />
+
+                <TextView
+                    android:id="@+id/tvDMYHijriah"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/d_m_y_hijriah"
+                    android:textColor="#FFF"
+                    android:textSize="20sp"
+                    app:layout_column="0"
+                    app:layout_columnWeight="1"
+                    app:layout_gravity="fill"
+                    app:layout_row="0"
+                    app:layout_rowWeight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                app:layout_gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tvNameMasjid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/name_masjid"
+                    android:textColor="#FFF"
+                    android:textSize="30sp"
+                    app:layout_column="1"
+                    app:layout_columnWeight="1"
+                    app:layout_gravity="fill"
+                    app:layout_row="0"
+                    app:layout_rowWeight="1" />
+
+                <TextView
+                    android:id="@+id/tvAddMasjid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/address_masjid"
+                    android:textColor="#FFF"
+                    android:textSize="20sp"
+                    app:layout_column="1"
+                    app:layout_columnWeight="1"
+                    app:layout_gravity="fill"
+                    app:layout_row="0"
+                    app:layout_rowWeight="1" />
+
+                <TextView
+                    android:id="@+id/tvNoHp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/no_hp"
+                    android:textColor="#FFF"
+                    android:textSize="20sp"
+                    app:layout_column="1"
+                    app:layout_columnWeight="1"
+                    app:layout_gravity="fill"
+                    app:layout_row="0"
+                    app:layout_rowWeight="1" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                app:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/tvTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/time"
+                    android:textColor="#FFF"
+                    android:textSize="30sp"
+                    app:layout_column="2"
+                    app:layout_columnWeight="1"
+                    app:layout_gravity="fill"
+                    app:layout_row="0"
+                    app:layout_rowWeight="1" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.GridLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="3dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toTopOf="@+id/linear2"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/timeSchedule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:padding="5dp"
+            android:text="@string/prayer_times"
+            android:textColor="#FFF"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:background="@color/colorAccent"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <android.support.v7.widget.GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorBox1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="5dp"
+                app:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/tvImsyak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/imsyak"
+                    android:textColor="@color/colorGold"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    app:layout_column="0"
+                    app:layout_columnWeight="1"
+                    app:layout_gravity="fill"
+                    app:layout_row="0"
+                    app:layout_rowWeight="1" />
+
+                <TextView
+                    android:id="@+id/tvTimeImsyak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/schedule"
+                    android:textColor="#FFF"
+                    android:textSize="40sp"
+                    app:layout_column="0"
+                    app:layout_columnWeight="1"
+                    app:layout_gravity="fill"
+                    app:layout_row="0"
+                    app:layout_rowWeight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorBox2"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="5dp"
+                app:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/tvShubuh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/shubuh"
+                    android:textColor="@color/colorGold"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    app:layout_column="0"
+                    app:layout_columnWeight="1"
+                    app:layout_gravity="fill"
+                    app:layout_row="0"
+                    app:layout_rowWeight="1" />
+
+                <TextView
+                    android:id="@+id/tvTimeShubuh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/schedule"
+                    android:textColor="#FFF"
+                    android:textSize="40sp"
+                    app:layout_column="0"
+                    app:layout_columnWeight="1"
+                    app:layout_gravity="fill"
+                    app:layout_row="0"
+                    app:layout_rowWeight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorBox3"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="5dp"
+                app:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/tvDzuhur"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dzuhur"
+                    android:textColor="@color/colorGold"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    app:layout_column="0"
+                    app:layout_columnWeight="1"
+                    app:layout_gravity="fill"
+                    app:layout_row="0"
+                    app:layout_rowWeight="1" />
+
+                <TextView
+                    android:id="@+id/tvTimeDzuhur"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/schedule"
+                    android:textColor="#FFF"
+                    android:textSize="40sp"
+                    app:layout_column="0"
+                    app:layout_columnWeight="1"
+                    app:layout_gravity="fill"
+                    app:layout_row="0"
+                    app:layout_rowWeight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorBox4"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="5dp"
+                app:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/tvAshar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ashar"
+                    android:textColor="@color/colorGold"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    app:layout_column="0"
+                    app:layout_columnWeight="1"
+                    app:layout_gravity="fill"
+                    app:layout_row="0"
+                    app:layout_rowWeight="1" />
+
+                <TextView
+                    android:id="@+id/tvTimeAshar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/schedule"
+                    android:textColor="#FFF"
+                    android:textSize="40sp"
+                    app:layout_column="0"
+                    app:layout_columnWeight="1"
+                    app:layout_gravity="fill"
+                    app:layout_row="0"
+                    app:layout_rowWeight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorBox5"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="5dp"
+                app:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/tvMagrib"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/magrib"
+                    android:textColor="@color/colorGold"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    app:layout_column="0"
+                    app:layout_columnWeight="1"
+                    app:layout_gravity="fill"
+                    app:layout_row="0"
+                    app:layout_rowWeight="1" />
+
+                <TextView
+                    android:id="@+id/tvTimeMagrib"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/schedule"
+                    android:textColor="#FFF"
+                    android:textSize="40sp"
+                    app:layout_column="0"
+                    app:layout_columnWeight="1"
+                    app:layout_gravity="fill"
+                    app:layout_row="0"
+                    app:layout_rowWeight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorBox1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="5dp"
+                app:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/tvIsya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/isya"
+                    android:textColor="@color/colorGold"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    app:layout_column="0"
+                    app:layout_columnWeight="1"
+                    app:layout_gravity="fill"
+                    app:layout_row="0"
+                    app:layout_rowWeight="1" />
+
+                <TextView
+                    android:id="@+id/tvTimeIsya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/schedule"
+                    android:textColor="#FFF"
+                    android:textSize="40sp"
+                    app:layout_column="0"
+                    app:layout_columnWeight="1"
+                    app:layout_gravity="fill"
+                    app:layout_row="0"
+                    app:layout_rowWeight="1" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.GridLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
